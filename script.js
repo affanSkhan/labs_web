@@ -19,6 +19,40 @@ const clear = document.querySelector("#clearSearch");
 const filters = Array.from(document.querySelectorAll(".filter"));
 const heroSearch = document.querySelector("#heroSearch");
 
+function setSiteLanguage(language) {
+  if (language === "en") {
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  } else {
+    document.cookie = "googtrans=/en/" + language + "; path=/;";
+  }
+  window.location.reload();
+}
+
+function initLanguageSwitcher() {
+  document.querySelectorAll(".lang-button").forEach(function(button) {
+    button.addEventListener("click", function() {
+      setSiteLanguage(button.dataset.lang);
+    });
+  });
+
+  var cookieParts = document.cookie.split("; ");
+  var language = "en";
+
+  cookieParts.forEach(function(part) {
+    if (part.indexOf("googtrans=") === 0) {
+      var value = part.split("=")[1] || "";
+      if (value.indexOf("/hi") !== -1) language = "hi";
+      if (value.indexOf("/mr") !== -1) language = "mr";
+    }
+  });
+
+  document.querySelectorAll(".lang-button").forEach(function(button) {
+    var active = button.dataset.lang === language;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+  });
+}
+
 function refreshIcons() {
   if (window.lucide && typeof window.lucide.createIcons === "function") {
     window.lucide.createIcons();
