@@ -26,13 +26,20 @@ Research references used for the UX direction include Suburban Diagnostics, Apol
 
 ## Image assets
 
-The website now uses three local SVG illustration assets under `assets/` so the production demo does not depend on third-party image hosts:
+The site combines local vector illustrations with two real healthcare photographs selected from Wikimedia Commons.
 
-- `assets/lab-hero.svg` — hero laboratory illustration
-- `assets/lab-scientist.svg` — clinical laboratory illustration
-- `assets/home-collection.svg` — home sample collection illustration
+Real photography:
+- **US Navy hospital corpsman drawing blood from a patient** — public domain U.S. Navy photograph.
+  https://commons.wikimedia.org/wiki/File:US_Navy_020418-N-7463C-001_A_Hospital_Corpsman_draws_blood_from_a_Patient.jpg
+- **Nurse checks blood pressure** — public domain National Cancer Institute photograph by Linda Bartlett.
+  https://commons.wikimedia.org/wiki/File:Nurse_checks_blood_pressure.jpg
 
-These are original vector illustrations created for the demo. They can be replaced with real FM Diagnostics photography before commercial launch.
+Local illustrations:
+- `assets/lab-hero.svg`
+- `assets/lab-scientist.svg`
+- `assets/home-collection.svg`
+
+The real photographs are illustrative and do not depict FM Diagnostics staff or patients. Before a commercial launch, replace them with original photography of the actual centre/team/patient experience where appropriate.
 
 ## Important demo note
 
