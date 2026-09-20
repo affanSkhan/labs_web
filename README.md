@@ -26,12 +26,10 @@ Research references used for the UX direction include Suburban Diagnostics, Apol
 
 ## Image assets
 
-The site combines local vector illustrations with two real healthcare photographs selected from Wikimedia Commons.
-
 Real photography:
-- **US Navy hospital corpsman drawing blood from a patient** — public domain U.S. Navy photograph.
-  https://commons.wikimedia.org/wiki/File:US_Navy_020418-N-7463C-001_A_Hospital_Corpsman_draws_blood_from_a_Patient.jpg
-- **Nurse checks blood pressure** — public domain National Cancer Institute photograph by Linda Bartlett.
+- **Doctor takes elderly patient's blood pressure** — free to use under the Unsplash License. Used as illustrative healthcare photography and not presented as FM Diagnostics staff/patients.
+  https://unsplash.com/photos/doctor-takes-elderly-patients-blood-pressure-96Eiu2AdZG0
+- **Nurse checks blood pressure** — public-domain healthcare photography.
   https://commons.wikimedia.org/wiki/File:Nurse_checks_blood_pressure.jpg
 
 Local illustrations:
@@ -44,3 +42,8 @@ The real photographs are illustrative and do not depict FM Diagnostics staff or 
 ## Important demo note
 
 Package names, test inclusions, service availability, pricing, turnaround times, credentials and operational claims must be reviewed and approved by FM Diagnostics before publication.
+
+
+## Languages
+
+The website includes an English / Hindi / Marathi language switcher. Hindi and Marathi are powered through the Google Translate website widget so the complete page—including navigation, content, forms and dynamically rendered text—can be translated without maintaining three separate HTML pages.
