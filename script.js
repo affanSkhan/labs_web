@@ -133,3 +133,4 @@ if (bookingForm) {
 
 refreshIcons();
 renderTests();
+initLanguageSwitcher();
