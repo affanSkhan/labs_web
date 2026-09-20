@@ -65,7 +65,7 @@ svg{width:18px;height:18px;stroke-width:1.9}
 .hero-image-frame{position:relative;border-radius:32px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1.02/1;max-width:530px;margin-left:auto;background:#dfeeea}
 .hero-image-frame img{width:100%;height:100%;object-fit:cover}
 .hero-image-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,25,28,0) 42%,rgba(4,25,28,.55) 100%)}
-.hero-image-caption{position:absolute;left:20px;right:20px;bottom:20px;display:flex;align-items:center;gap:12px;color:#fff}
+.visual-note{position:absolute;z-index:2;left:18px;top:18px;margin:0;padding:7px 9px;border-radius:9px;background:rgba(6,28,29,.56);color:#edf7f5;font-size:8px;line-height:1.35;backdrop-filter:blur(7px)}.hero-image-caption{position:absolute;left:20px;right:20px;bottom:20px;display:flex;align-items:center;gap:12px;color:#fff}
 .caption-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(8px)}
 .caption-icon svg{width:20px;height:20px}
 .hero-image-caption strong,.hero-image-caption small{display:block}
