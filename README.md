@@ -24,18 +24,15 @@ Research references used for the UX direction include Suburban Diagnostics, Apol
 - Lucide icons via CDN
 - Static deployment compatible with Netlify/Vercel/GitHub Pages
 
-## Image credits
+## Image assets
 
-The visual concept uses public-domain laboratory photography hosted through Wikimedia Commons:
+The website now uses three local SVG illustration assets under `assets/` so the production demo does not depend on third-party image hosts:
 
-- Technician performing laboratory test — National Cancer Institute / Linda Bartlett
-  https://commons.wikimedia.org/wiki/File:Technician_performing_laboratory_test.jpg
-- Scientist working in laboratory
-  https://commons.wikimedia.org/wiki/File:Scientist_working_in_laboratory.jpg
-- Laboratory (5)
-  https://commons.wikimedia.org/wiki/File:Laboratory_(5).jpg
+- `assets/lab-hero.svg` — hero laboratory illustration
+- `assets/lab-scientist.svg` — clinical laboratory illustration
+- `assets/home-collection.svg` — home sample collection illustration
 
-The images are used as visual placeholders and should ideally be replaced with original photographs of FM Diagnostics before a commercial launch.
+These are original vector illustrations created for the demo. They can be replaced with real FM Diagnostics photography before commercial launch.
 
 ## Important demo note
 
