@@ -27,17 +27,17 @@ Research references used for the UX direction include Suburban Diagnostics, Apol
 ## Image assets
 
 Real photography:
-- **Doctor takes elderly patient's blood pressure** — free to use under the Unsplash License. Used as illustrative healthcare photography and not presented as FM Diagnostics staff/patients.
-  https://unsplash.com/photos/doctor-takes-elderly-patients-blood-pressure-96Eiu2AdZG0
-- **Nurse checks blood pressure** — public-domain healthcare photography.
-  https://commons.wikimedia.org/wiki/File:Nurse_checks_blood_pressure.jpg
+- **Doctor checks blood pressure of a patient wearing a headscarf** — listed by Pexels as free to use. Used as illustrative stock photography and not presented as FM Diagnostics staff/patients.
+  https://www.pexels.com/photo/a-doctor-taking-blood-pressure-of-a-patient-7659572/
+- **Confident female doctor in hijab holding a stethoscope** — listed by Pexels as free to use. Used as illustrative stock photography and not presented as FM Diagnostics staff/patients.
+  https://www.pexels.com/photo/confident-female-doctor-holding-stethoscope-33055498/
 
 Local illustrations:
 - `assets/lab-hero.svg`
 - `assets/lab-scientist.svg`
 - `assets/home-collection.svg`
 
-The real photographs are illustrative and do not depict FM Diagnostics staff or patients. Before a commercial launch, replace them with original photography of the actual centre/team/patient experience where appropriate.
+The real photographs are illustrative and do not depict FM Diagnostics staff or patients. Before a commercial launch, replace them with original photography of the actual centre/team/patient experience where appropriate. The visual direction intentionally uses modest, family-oriented healthcare imagery and subtle geometric accents to feel familiar to the local community without making medical or religious claims.
 
 ## Important demo note
 
