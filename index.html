@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="FM Diagnostics — diagnostic tests, health checkups and home sample collection in Kausar Baugh, Kondhwa, Pune.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0a625b">
-  <meta name="format-detection" content="telephone=no">
-  <title>FM Diagnostics | Kausar Baugh, Kondhwa</title>
+  <meta name="description" content="Carevia Diagnostics — a modern diagnostic lab demo.">
+  <title>Carevia Diagnostics | Tests, Home Collection & Reports</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Noto+Naskh+Arabic:wght@500;600&display=swap" rel="stylesheet">
@@ -14,210 +13,76 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
-  <div class="announcement">
-    <div class="container announcement-inner">
-      <span><i data-lucide="map-pin"></i>Kausar Baugh, Kondhwa, Pune</span>
-      <span><i data-lucide="clock-3"></i>Mon–Sat 8 AM–10 PM · Sun 8 AM–4 PM</span>
-    </div>
-  </div>
-
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="FM Diagnostics home">
-        <span class="brand-symbol">FM</span>
-        <span class="brand-copy"><strong>FM Diagnostics</strong><small>Care closer to home.</small></span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#tests">Tests</a>
-        <a href="#packages">Packages</a>
-        <a href="#home-collection">Home Collection</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
+  <div class="topbar"><div class="container topbar-inner"><span><i data-lucide="shield-check"></i>Trusted diagnostic experience</span><span>Mon–Sun · Early morning to late evening</span></div></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home"><span class="brand-mark">C</span><span><strong>Carevia Diagnostics</strong><small>Clear tests. Clear answers.</small></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#tests">Tests</a><a href="#packages">Packages</a><a href="#home-collection">Home Collection</a><a href="#reports">Reports</a><a href="#contact">Contact</a></nav>
       <div class="nav-actions">
-        <div class="language-switcher" aria-label="Language selector">
-          <button type="button" class="lang-button active" data-lang="en" aria-pressed="true">EN</button>
-          <button type="button" class="lang-button" data-lang="hi" aria-pressed="false">हिन्दी</button>
-          <button type="button" class="lang-button" data-lang="mr" aria-pressed="false">मराठी</button>
-        </div>
-        <a class="button button-primary nav-button" href="#booking"><i data-lucide="calendar-check-2"></i>Book</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
+        <div class="language-switcher"><button class="lang-button active" data-lang="en">EN</button><button class="lang-button" data-lang="hi">हिन्दी</button><button class="lang-button" data-lang="mr">मराठी</button></div>
+        <a class="button button-primary nav-book" href="#booking">Book</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
       </div>
     </div>
-
-    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-      <div class="container mobile-menu-inner">
-        <a href="#services">Services <i data-lucide="arrow-up-right"></i></a>
-        <a href="#tests">Tests <i data-lucide="arrow-up-right"></i></a>
-        <a href="#packages">Packages <i data-lucide="arrow-up-right"></i></a>
-        <a href="#home-collection">Home Collection <i data-lucide="arrow-up-right"></i></a>
-        <a href="#contact">Contact <i data-lucide="arrow-up-right"></i></a>
-        <a class="mobile-menu-cta" href="#booking">Book a Test <i data-lucide="calendar-check-2"></i></a>
-      </div>
-    </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><div class="container mobile-menu-inner"><a href="#tests">Tests</a><a href="#packages">Packages</a><a href="#home-collection">Home Collection</a><a href="#reports">Reports</a><a href="#contact">Contact</a><a class="mobile-menu-cta" href="#booking">Book a Test <i data-lucide="arrow-up-right"></i></a></div></div>
   </header>
 
   <main id="home">
-    <section class="hero compact-hero">
-      <div class="hero-pattern" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
-
+    <section class="hero">
+      <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
       <div class="container hero-grid reveal">
         <div class="hero-copy">
-          <div class="hero-kicker-row">
-            <span class="kicker"><span class="kicker-line"></span>Local diagnostic care</span>
-            <span class="arabic-mark">صحة • عناية • ثقة</span>
-          </div>
-          <h1>Your health.<br><span>Our care.</span></h1>
-          <p class="hero-lead">Blood tests, health checkups and home sample collection for Kausar Baugh and nearby families.</p>
-
-          <div class="hero-actions">
-            <a class="button button-primary button-large" href="#booking">Book a Test <i data-lucide="arrow-up-right"></i></a>
-            <a class="button button-ghost button-large" href="https://wa.me/919359744913?text=Hi%20FM%20Diagnostics%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener"><i data-lucide="message-circle"></i>WhatsApp</a>
-          </div>
-
-          <div class="hero-trust-row compact-trust">
-            <div><i data-lucide="check-circle-2"></i><span><strong>Easy booking</strong><small>Call or WhatsApp</small></span></div>
-            <div><i data-lucide="house-plus"></i><span><strong>Home collection</strong><small>Ask for availability</small></span></div>
-            <div><i data-lucide="clock-3"></i><span><strong>Open late</strong><small>Up to 10 PM</small></span></div>
-          </div>
+          <div class="kicker"><span></span>Diagnostic care made easy</div>
+          <h1>Know your health.<br><em>Move forward.</em></h1>
+          <p>Find a test, choose a package or book a sample collection — all in a few simple steps.</p>
+          <div class="hero-search"><i data-lucide="search"></i><input id="heroSearch" placeholder="Search CBC, thyroid, vitamin D…"><button type="button" id="heroSearchButton">Find <i data-lucide="arrow-up-right"></i></button></div>
+          <div class="hero-actions"><a class="button button-primary button-large" href="#booking">Book a Test <i data-lucide="calendar-check-2"></i></a><a class="button button-ghost button-large" href="#home-collection">Home Collection <i data-lucide="house-plus"></i></a></div>
+          <div class="hero-points"><span><i data-lucide="check-circle-2"></i>Easy booking</span><span><i data-lucide="house-plus"></i>Home collection</span><span><i data-lucide="file-check-2"></i>Digital reports</span></div>
         </div>
-
         <div class="hero-visual">
-          <div class="hero-photo-shell compact-photo">
-            <img src="https://images.pexels.com/photos/10705020/pexels-photo-10705020.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Female doctor wearing hijab and stethoscope">
-            <div class="photo-shade"></div>
-            <div class="photo-top-label"><span></span>FM Diagnostics</div>
-            <div class="photo-caption"><div class="caption-icon"><i data-lucide="heart-pulse"></i></div><div><strong>Simple care. Close by.</strong><small>Illustrative stock photography</small></div></div>
-          </div>
-          <div class="floating-search"><div class="floating-search-icon"><i data-lucide="search"></i></div><div><strong>Find a test</strong><small>CBC, thyroid, vitamin D…</small></div><i data-lucide="arrow-right"></i></div>
+          <div class="hero-photo"><img src="https://images.pexels.com/photos/6285378/pexels-photo-6285378.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Healthcare professional performing a blood test"><div class="photo-shade"></div><div class="photo-label"><span></span>Patient-first care</div><div class="photo-caption"><strong>From test to report</strong><small>Illustrative stock photography</small></div></div>
+          <div class="hero-card"><div class="hero-card-icon"><i data-lucide="search-check"></i></div><div><strong>Find your test</strong><small>Search by test or health goal</small></div><i data-lucide="arrow-right"></i></div>
         </div>
       </div>
     </section>
 
-    <section class="quick-actions">
-      <div class="container quick-grid reveal">
-        <a href="#tests" class="quick-card"><span class="quick-icon"><i data-lucide="test-tube-2"></i></span><span><strong>Tests</strong><small>Find a test</small></span><i data-lucide="arrow-up-right"></i></a>
-        <a href="#packages" class="quick-card"><span class="quick-icon"><i data-lucide="layers-3"></i></span><span><strong>Packages</strong><small>Health checkups</small></span><i data-lucide="arrow-up-right"></i></a>
-        <a href="#home-collection" class="quick-card"><span class="quick-icon"><i data-lucide="house-plus"></i></span><span><strong>Home collection</strong><small>Sample pickup</small></span><i data-lucide="arrow-up-right"></i></a>
-        <a href="#contact" class="quick-card"><span class="quick-icon"><i data-lucide="navigation"></i></span><span><strong>Centre</strong><small>Address & directions</small></span><i data-lucide="arrow-up-right"></i></a>
+    <section class="trust-strip"><div class="container trust-grid reveal"><div><strong>TESTS</strong><span>Search by name</span></div><div><strong>PACKAGES</strong><span>Routine health checks</span></div><div><strong>HOME</strong><span>Sample collection</span></div><div><strong>REPORTS</strong><span>Simple access</span></div></div></section>
+
+    <section class="section" id="tests"><div class="container">
+      <div class="section-head reveal"><div><span class="kicker">Popular tests</span><h2>Find it fast.</h2></div><p>Demo catalogue. Final test list and prices can be added for each client.</p></div>
+      <div class="test-toolbar reveal"><label class="search-field"><i data-lucide="search"></i><input id="testSearch" placeholder="Search a test..."><button id="clearSearch" type="button" aria-label="Clear"><i data-lucide="x"></i></button></label><div class="filter-row"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="blood">Blood</button><button class="filter" data-filter="thyroid">Thyroid</button><button class="filter" data-filter="vitamins">Vitamins</button><button class="filter" data-filter="wellness">Wellness</button></div></div>
+      <div class="test-grid reveal" id="testGrid"></div>
+    </div></section>
+
+    <section class="section section-soft" id="packages"><div class="container">
+      <div class="section-head reveal"><div><span class="kicker">Health packages</span><h2>Simple choices.</h2></div><p>Show a few useful packages without making patients scroll through a long list.</p></div>
+      <div class="package-grid reveal">
+        <article class="package-card featured"><span class="package-mini">Popular</span><span class="package-icon"><i data-lucide="sparkles"></i></span><h3>Everyday Wellness</h3><p>Routine screening for everyday health.</p><div class="tags"><span>CBC</span><span>Glucose</span><span>Lipid</span></div><button class="text-link choose-package" data-package="Everyday Wellness">Ask about this <i data-lucide="arrow-right"></i></button></article>
+        <article class="package-card"><span class="package-mini">Focused</span><span class="package-icon"><i data-lucide="activity"></i></span><h3>Diabetes Care</h3><p>Useful checks for regular glucose monitoring.</p><div class="tags"><span>Sugar</span><span>HbA1c</span><span>Kidney</span></div><button class="text-link choose-package" data-package="Diabetes Care">Ask about this <i data-lucide="arrow-right"></i></button></article>
+        <article class="package-card"><span class="package-mini">Focused</span><span class="package-icon"><i data-lucide="sun-medium"></i></span><h3>Thyroid & Vitamins</h3><p>A focused wellness screening option.</p><div class="tags"><span>Thyroid</span><span>Vitamin D</span><span>B12</span></div><button class="text-link choose-package" data-package="Thyroid & Vitamins">Ask about this <i data-lucide="arrow-right"></i></button></article>
       </div>
-    </section>
+    </div></section>
 
-    <section class="section section-soft" id="services">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="kicker">Services</span><h2>Care made<br><span>simple.</span></h2></div>
-          <p>Everything you need for routine testing and health checks.</p>
-        </div>
+    <section class="section home-section" id="home-collection"><div class="container home-grid reveal">
+      <div class="home-photo"><img src="https://images.pexels.com/photos/7578801/pexels-photo-7578801.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Healthcare worker preparing home healthcare service"><div class="photo-overlay"></div><div class="home-badge"><i data-lucide="house-plus"></i><span><strong>Home collection</strong><small>Ask for available area</small></span></div></div>
+      <div class="home-copy"><span class="kicker">At-home testing</span><h2>We come<br><em>to you.</em></h2><p>Request a sample pickup from home. The lab confirms your area and time.</p><div class="steps"><div><b>01</b><span><strong>Choose a test</strong><small>Pick a test or package.</small></span></div><div><b>02</b><span><strong>Send your details</strong><small>Use the form or WhatsApp.</small></span></div><div><b>03</b><span><strong>Get confirmation</strong><small>The lab confirms the slot.</small></span></div></div><a class="button button-primary button-large" href="#booking">Request Collection <i data-lucide="arrow-up-right"></i></a></div>
+    </div></section>
 
-        <div class="service-bento concise-services reveal">
-          <article class="service-card service-main">
-            <div class="service-bg-motif" aria-hidden="true"></div>
-            <div class="service-card-top"><span class="service-icon"><i data-lucide="test-tube-2"></i></span></div>
-            <div class="service-card-bottom"><h3>Blood Tests</h3><p>CBC, sugar, liver, kidney, thyroid and more.</p><a href="#tests" class="inline-link">See tests <i data-lucide="arrow-right"></i></a></div>
-          </article>
+    <section class="section report-section" id="reports"><div class="container report-card reveal"><div class="report-icon"><i data-lucide="file-text"></i></div><div><span class="kicker">Reports</span><h2>Get your report without the hunt.</h2><p>A clear report access area can sit right on the homepage. For a live site, connect it to the lab's approved secure report system.</p></div><button class="button button-dark demo-report" type="button">View Demo Report <i data-lucide="arrow-up-right"></i></button></div></section>
 
-          <article class="service-card"><div class="service-card-top"><span class="service-icon soft"><i data-lucide="heart-pulse"></i></span></div><h3>Health Checkups</h3><p>Simple packages for routine screening.</p></article>
+    <section class="section quality-section"><div class="container quality-grid reveal"><div><span class="kicker">Why this layout works</span><h2>A lab website should<br><em>answer quickly.</em></h2><p>Search, booking, packages, home collection and reports stay close to the first screen so patients can act without digging through menus.</p></div><div class="quality-list"><div><span>01</span><strong>Search-first</strong><small>Start with the test the patient already knows.</small></div><div><span>02</span><strong>Action-first</strong><small>Call, book or request collection in one tap.</small></div><div><span>03</span><strong>Trust-first</strong><small>Keep credentials, centre details and real information visible.</small></div></div></div></section>
 
-          <article class="service-card image-card"><img src="https://images.pexels.com/photos/34833827/pexels-photo-34833827.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Female doctor in hijab with stethoscope"><div class="image-gradient"></div><div class="image-card-copy"><span>Care with comfort</span><h3>Professional.<br>Warm. Familiar.</h3></div></article>
+    <section class="section contact-section" id="contact"><div class="container contact-grid reveal"><div><span class="kicker">Find us</span><h2>Close by.<br><em>Easy to reach.</em></h2><p>Use this section for the centre address, timings, phone and map.</p><div class="contact-actions"><a class="button button-primary" href="#booking"><i data-lucide="phone"></i>Call / Enquire</a><a class="button button-ghost" href="#booking"><i data-lucide="navigation"></i>Directions</a></div></div><div class="contact-card"><span class="contact-mini">Demo location</span><h3>Your Diagnostic Centre</h3><p>City · Area · Landmark<br>Mon–Sun · Timings</p><div class="contact-bottom"><span><i data-lucide="map-pin"></i>Update with client details</span><i data-lucide="arrow-right"></i></div></div></div></section>
 
-          <article class="service-card"><div class="service-card-top"><span class="service-icon soft"><i data-lucide="file-check-2"></i></span></div><h3>Reports</h3><p>Clear information on report collection and delivery.</p></article>
-
-          <article class="service-card service-wide"><div><div class="service-card-top"><span class="service-icon"><i data-lucide="house-plus"></i></span></div><h3>Home Sample Collection</h3><p>Request a doorstep pickup and confirm availability.</p><a href="#booking" class="inline-link">Request home collection <i data-lucide="arrow-right"></i></a></div><div class="wide-badge"><strong>At home</strong><span>Easy. Convenient.</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tests">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="kicker">Popular tests</span><h2>Find your<br><span>test.</span></h2></div>
-          <p>Demo list — final tests and prices will be confirmed by FM Diagnostics.</p>
-        </div>
-        <div class="test-toolbar reveal">
-          <label class="search-field"><i data-lucide="search"></i><input id="testSearch" type="search" placeholder="Search a test..." autocomplete="off"><button id="clearSearch" type="button" aria-label="Clear search"><i data-lucide="x"></i></button></label>
-          <div class="filter-row" role="tablist" aria-label="Test categories">
-            <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="blood">Blood</button><button class="filter" data-filter="thyroid">Thyroid</button><button class="filter" data-filter="vitamins">Vitamins</button><button class="filter" data-filter="wellness">Wellness</button>
-          </div>
-        </div>
-        <div class="test-grid reveal" id="testGrid"></div>
-      </div>
-    </section>
-
-    <section class="section packages-section" id="packages">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="kicker">Packages</span><h2>Simple health<br><span>checks.</span></h2></div>
-          <p>Examples for the demo.</p>
-        </div>
-        <div class="package-grid reveal">
-          <article class="package-card featured"><div class="package-top"><span>Everyday</span><span class="package-icon"><i data-lucide="sparkles"></i></span></div><h3>Everyday Wellness</h3><p>Routine screening for everyday health.</p><div class="package-tags"><span>CBC</span><span>Glucose</span><span>Lipid</span></div><button class="package-link choose-package" data-package="Everyday Wellness">Ask about this <i data-lucide="arrow-right"></i></button></article>
-          <article class="package-card"><div class="package-top"><span>Diabetes</span><span class="package-icon"><i data-lucide="activity"></i></span></div><h3>Diabetes Care</h3><p>For regular glucose monitoring.</p><div class="package-tags"><span>Sugar</span><span>HbA1c</span><span>Kidney</span></div><button class="package-link choose-package" data-package="Diabetes Care">Ask about this <i data-lucide="arrow-right"></i></button></article>
-          <article class="package-card"><div class="package-top"><span>Wellness</span><span class="package-icon"><i data-lucide="sun-medium"></i></span></div><h3>Thyroid & Vitamins</h3><p>Focused wellness screening.</p><div class="package-tags"><span>Thyroid</span><span>Vitamin D</span><span>B12</span></div><button class="package-link choose-package" data-package="Thyroid & Vitamins">Ask about this <i data-lucide="arrow-right"></i></button></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section collection-section" id="home-collection">
-      <div class="container collection-grid reveal">
-        <div class="collection-visual"><div class="collection-frame"><img src="https://images.pexels.com/photos/10505889/pexels-photo-10505889.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Muslim family smiling together at home"><div class="collection-image-overlay"></div><div class="family-label"><i data-lucide="heart-handshake"></i><span>For the whole family</span></div></div></div>
-        <div class="collection-copy">
-          <span class="kicker">Home collection</span>
-          <h2>Need a test<br><span>at home?</span></h2>
-          <p>Send your details. The lab can confirm the available area and timing.</p>
-          <div class="process-list"><div><span>01</span><div><strong>Choose a test</strong><small>Select a test or package.</small></div></div><div><span>02</span><div><strong>Send your details</strong><small>Use the form or WhatsApp.</small></div></div><div><span>03</span><div><strong>Get confirmation</strong><small>FM Diagnostics confirms availability.</small></div></div></div>
-          <a class="button button-primary button-large" href="#booking">Request home collection <i data-lucide="arrow-up-right"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid reveal">
-        <div class="contact-main"><span class="kicker">Find us</span><h2>Easy to find.<br><span>Easy to reach.</span></h2><p>Plot No. 45, NIBM Galli No. 2, opposite Café Bun Maska, Kausar Baugh, Kondhwa, Pune 411048.</p><div class="contact-actions"><a class="button button-primary" href="tel:+919359744913"><i data-lucide="phone"></i>Call</a><a class="button button-ghost" href="https://maps.google.com/?q=FM+Diagnostics+Kausar+Baugh+Kondhwa+Pune" target="_blank" rel="noopener"><i data-lucide="navigation"></i>Directions</a></div></div>
-        <div class="contact-card"><div class="contact-card-icon"><i data-lucide="message-circle"></i></div><span>Quick enquiry</span><h3>WhatsApp us</h3><p>Ask about tests, packages or home collection.</p><a class="button button-light" href="https://wa.me/919359744913?text=Hi%20FM%20Diagnostics%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank" rel="noopener">Start WhatsApp <i data-lucide="arrow-up-right"></i></a></div>
-      </div>
-    </section>
-
-    <section class="booking-section" id="booking">
-      <div class="booking-pattern" aria-hidden="true"></div>
-      <div class="container booking-grid reveal">
-        <div class="booking-copy"><span class="kicker kicker-light">Book / enquire</span><h2>Just send<br><span>the details.</span></h2><p>This demo opens a pre-filled WhatsApp message. Final booking flow can be connected to the lab's approved system.</p></div>
-        <form class="booking-form" id="bookingForm">
-          <div class="form-row"><label>Name<input required name="name" placeholder="Your name"></label><label>Phone<input required name="phone" inputmode="tel" placeholder="Mobile number"></label></div>
-          <label>What do you need?<select name="need"><option>Book a test</option><option>Home sample collection</option><option>Health package</option><option>Ask about a test</option></select></label>
-          <label>Test / message<textarea name="message" rows="4" placeholder="e.g. CBC test tomorrow morning"></textarea></label>
-          <button class="button button-light button-large" type="submit">Continue on WhatsApp <i data-lucide="arrow-up-right"></i></button>
-          <small>This demo does not store medical information.</small>
-        </form>
-      </div>
-    </section>
+    <section class="booking-section" id="booking"><div class="container booking-grid reveal"><div class="booking-copy"><span class="kicker kicker-light">Book / enquire</span><h2>Make the next step<br><em>obvious.</em></h2><p>Demo form — submissions open a WhatsApp-style enquiry flow. For production, connect it to the lab's approved system.</p></div><form class="booking-form" id="bookingForm"><div class="form-row"><label>Name<input required name="name" placeholder="Your name"></label><label>Phone<input required name="phone" placeholder="Mobile number"></label></div><label>What do you need?<select name="need"><option>Book a test</option><option>Home sample collection</option><option>Health package</option><option>Ask about a test</option></select></label><label>Test / message<textarea name="message" rows="4" placeholder="e.g. CBC test tomorrow morning"></textarea></label><button class="button button-light button-large" type="submit">Continue <i data-lucide="arrow-up-right"></i></button><small>This demo does not store medical information.</small></form></div></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <div class="footer-brand-wrap"><a class="brand footer-brand" href="#home"><span class="brand-symbol">FM</span><span class="brand-copy"><strong>FM Diagnostics</strong><small>Care closer to home.</small></span></a><p>Website demo for FM Diagnostics, Kausar Baugh, Kondhwa.</p></div>
-      <div class="footer-links"><strong>Explore</strong><a href="#tests">Tests</a><a href="#packages">Packages</a><a href="#home-collection">Home Collection</a><a href="#contact">Contact</a></div>
-      <div class="footer-contact"><strong>Contact</strong><a href="tel:+919359744913"><i data-lucide="phone"></i>+91 93597 44913</a><span>Kausar Baugh, Kondhwa, Pune</span></div>
-    </div>
-    <div class="container footer-bottom"><span>© 2026 FM Diagnostics — Demo.</span><span>Final content and pricing need lab approval.</span></div>
-  </footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">C</span><span><strong>Carevia Diagnostics</strong><small>Clear tests. Clear answers.</small></span></a><p>Master diagnostic-lab demo for client presentations.</p></div><div><strong>Explore</strong><a href="#tests">Tests</a><a href="#packages">Packages</a><a href="#home-collection">Home Collection</a><a href="#reports">Reports</a></div><div><strong>Contact</strong><span>Replace with client phone</span><span>Replace with client address</span></div></div><div class="container footer-bottom"><span>Demo concept · Replace content before launch</span><span>English · हिन्दी · मराठी</span></div></footer>
 
-  <div class="mobile-action-bar">
-    <a href="tel:+919359744913"><i data-lucide="phone"></i><span>Call</span></a>
-    <a href="https://wa.me/919359744913" target="_blank" rel="noopener"><i data-lucide="message-circle"></i><span>WhatsApp</span></a>
-    <a href="#booking" class="mobile-book"><i data-lucide="calendar-check-2"></i><span>Book</span></a>
-  </div>
+  <div class="mobile-action-bar"><a href="#booking"><i data-lucide="calendar-check-2"></i><span>Book</span></a><a href="#home-collection"><i data-lucide="house-plus"></i><span>Home</span></a><a href="#contact"><i data-lucide="phone"></i><span>Contact</span></a></div>
 
   <div id="google_translate_element" aria-hidden="true"></div>
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: "en", includedLanguages: "en,hi,mr", autoDisplay: false }, "google_translate_element");
-    }
-  </script>
+  <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:"en",includedLanguages:"en,hi,mr",autoDisplay:false},"google_translate_element");}</script>
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="script.js"></script>
 </body>
