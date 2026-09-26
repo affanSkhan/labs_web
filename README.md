@@ -51,4 +51,4 @@ The website includes an English / Hindi / Marathi language switcher. Hindi and M
 
 ## Mobile-first redesign
 
-The latest pass uses a mobile-first interaction model with a compact header, collapsible navigation, horizontally scrollable category filters, large one-hand-friendly CTAs, stacked cards, a fixed Call / WhatsApp / Book action bar, safe-area spacing and reduced-motion support.
+The latest version keeps the content short and easy to scan, with a compact mobile header, swipeable test filters, stacked cards, large touch targets, fixed Call / WhatsApp / Book actions, safe-area spacing and reduced-motion support.
