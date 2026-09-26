@@ -47,3 +47,8 @@ Package names, test inclusions, service availability, pricing, turnaround times,
 ## Languages
 
 The website includes an English / Hindi / Marathi language switcher. Hindi and Marathi are powered through the Google Translate website widget so the complete page—including navigation, content, forms and dynamically rendered text—can be translated without maintaining three separate HTML pages.
+
+
+## Mobile-first redesign
+
+The latest pass uses a mobile-first interaction model with a compact header, collapsible navigation, horizontally scrollable category filters, large one-hand-friendly CTAs, stacked cards, a fixed Call / WhatsApp / Book action bar, safe-area spacing and reduced-motion support.
