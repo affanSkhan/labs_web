@@ -19,6 +19,7 @@ Premium hospital UI with a calm blue clinical palette, clean cards, strong emerg
 ## Image sources
 Pexels stock photography used as illustrative imagery:
 - https://www.pexels.com/photo/healthcare-professionals-discussing-treatment-5452293/
+- https://www.pexels.com/photo/docto-19438558/
 - https://www.pexels.com/photo/healthcare-professional-testing-a-girls-blood-sugar-at-home-7579592/
 - https://www.pexels.com/photo/doctor-and-patient-in-a-medical-consultation-7088487/
 
