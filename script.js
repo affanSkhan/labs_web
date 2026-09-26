@@ -17,13 +17,14 @@ const grid = document.querySelector("#testGrid");
 const search = document.querySelector("#testSearch");
 const clear = document.querySelector("#clearSearch");
 const filters = Array.from(document.querySelectorAll(".filter"));
-const heroSearch = document.querySelector("#heroSearch");
+const menuToggle = document.querySelector("#menuToggle");
+const mobileMenu = document.querySelector("#mobileMenu");
 
 function setSiteLanguage(language) {
   if (language === "en") {
     document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   } else {
-    document.cookie = "googtrans=/en/" + language + "; path=/;";
+    document.cookie = "googtrans=/en/" + language + "; path=/";
   }
   window.location.reload();
 }
@@ -35,10 +36,8 @@ function initLanguageSwitcher() {
     });
   });
 
-  var cookieParts = document.cookie.split("; ");
   var language = "en";
-
-  cookieParts.forEach(function(part) {
+  document.cookie.split("; ").forEach(function(part) {
     if (part.indexOf("googtrans=") === 0) {
       var value = part.split("=")[1] || "";
       if (value.indexOf("/hi") !== -1) language = "hi";
@@ -73,31 +72,62 @@ function renderTests() {
   if (!grid) return;
 
   if (!rows.length) {
-    grid.innerHTML =
-      '<div class="empty-state"><strong>No matching test found</strong><div>Try another search term or contact FM Diagnostics.</div></div>';
+    grid.innerHTML = '<div class="empty-state"><strong>No matching test found</strong><div>Try another search term or contact FM Diagnostics.</div></div>';
     refreshIcons();
     return;
   }
 
   grid.innerHTML = rows.map(function(test) {
-    return (
-      '<article class="test-card">' +
-        '<span class="test-tag">' + test.tag + "</span>" +
-        "<h3>" + test.name + "</h3>" +
-        "<p>" + test.desc + "</p>" +
-        '<a class="test-link" href="#booking" data-test="' + test.name + '">' +
-          'Ask about this test <i data-lucide="arrow-right"></i>' +
-        "</a>" +
-      "</article>"
-    );
+    return '<article class="test-card"><span class="test-tag">' + test.tag + '</span><h3>' + test.name + '</h3><p>' + test.desc + '</p><a class="test-link" href="#booking" data-test="' + test.name + '">Ask about this test <i data-lucide="arrow-right"></i></a></article>';
   }).join("");
 
   refreshIcons();
 }
 
-if (search) {
-  search.addEventListener("input", renderTests);
+function initMenu() {
+  if (!menuToggle || !mobileMenu) return;
+
+  menuToggle.addEventListener("click", function() {
+    const isOpen = mobileMenu.classList.toggle("open");
+    document.body.classList.toggle("menu-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    mobileMenu.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    menuToggle.innerHTML = '<i data-lucide="' + (isOpen ? "x" : "menu") + '"></i>';
+    refreshIcons();
+  });
+
+  mobileMenu.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      mobileMenu.classList.remove("open");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      menuToggle.innerHTML = '<i data-lucide="menu"></i>';
+      refreshIcons();
+    });
+  });
 }
+
+function initReveal() {
+  const items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    items.forEach(function(item) { item.classList.add("is-visible"); });
+    return;
+  }
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: "0px 0px -7% 0px", threshold: 0.08 });
+
+  items.forEach(function(item) { observer.observe(item); });
+}
+
+if (search) search.addEventListener("input", renderTests);
 
 if (clear) {
   clear.addEventListener("click", function() {
@@ -109,24 +139,11 @@ if (clear) {
 
 filters.forEach(function(filter) {
   filter.addEventListener("click", function() {
-    filters.forEach(function(item) {
-      item.classList.remove("active");
-    });
+    filters.forEach(function(item) { item.classList.remove("active"); });
     filter.classList.add("active");
     renderTests();
   });
 });
-
-if (heroSearch) {
-  heroSearch.addEventListener("input", function(event) {
-    if (search) search.value = event.target.value;
-    const testsSection = document.querySelector("#tests");
-    if (testsSection) {
-      testsSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    renderTests();
-  });
-}
 
 document.addEventListener("click", function(event) {
   const testTrigger = event.target.closest("[data-test]");
@@ -168,3 +185,5 @@ if (bookingForm) {
 refreshIcons();
 renderTests();
 initLanguageSwitcher();
+initMenu();
+initReveal();
